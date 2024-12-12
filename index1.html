@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Highlight on Scroll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 0;
+        }
+        nav {
+            
+            position: fixed;
+            top: 10px;
+            left: 80px;
+           
+            padding: 10px;
+          
+
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 100px ;
+          
+    
+           
+          
+          
+            
+}
+        
+        nav a.active {
+           
+            
+             background-color: orange; 
+             border-radius: 6px;
+             
+             /* color: black;
+           
+            width: 1px;                /* Line thickness */
+    /* background-color: #000;    Line color */
+    /* height: 100px;   */
+    /* background-color: orange;  */
+    /* border-radius: 6px;           */ */
+            
+        }
+      
+
+        .imagefixed{
+            position: fixed;
+
+        }
+        /* .section {
+            height:90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: appear  linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover;
+            
+        } */
+        img {
+           
+            transition: transform 0.3s;
+            margin-bottom: 1000px ;
+            margin-right: 100px;
+            border-radius: 15px;
+        }
+        @keyframes appear {
+            from{
+               opacity:0.5; 
+               scale:0.6;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+
+            
+        }
+        #imagecenter{
+            position: absolute;
+            top: 100px;
+            right: 10px;
+
+           
+
+        }
+      /* .section {
+        
+        align-items: center;
+            animation: appear  linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover;
+        } */
+        .animation{
+            animation: appear  linear;
+            animation-timeline: view();
+            animation-duration:0.1s ;
+            animation-range: entry 10%;
+
+        }
+        #content{
+            position: fixed;
+           top: 10px;
+            left: 200px;
+           
+            padding: 10px;
+          
+
+        }
+        p{
+          margin-top: 66px;
+          padding-left: 10px;
+  font-family: "Cedarville Cursive", serif;
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200%;
+  
+  
+  
+        }
+        #line{
+
+            width: 4px;               /* Width of the vertical line */
+    height: 0;                /* Initial height of the line */
+    background-color:orange; /* Line color */
+    position: fixed;          /* Fix the line in a position */
+    top: 120px;                /* Position from the top */
+    left: 200px;  
+                
+        }
+        
+    </style>
+</head>
+<body>
+<div id="line"></div>
+<nav>
+    <a href="#image1" class="nav-link active "><i class="fas fa-circle-notch "></i></a>
+    <a href="#image2" class="nav-link "><i class="fas fa-circle-notch " ></i></a>
+    <a href="#image3" class="nav-link "><i class="fas fa-circle-notch "></i></a>
+</nav>
+<div id="content">
+    <p> you are ready to grow</p>
+    <p>creative work here</p>
+    <p>your faves are back</p>
+</div>
+
+<div id="imagecenter">
+    <div  id="image1"class="animation" >
+        <img src="unnamed (1).jpg" alt="Placeholder Image 1">
+    </div>
+    <div class="section animation" id="image2"  >
+        <img src="unnamed (2).jpg" alt="Placeholder Image 2">
+    </div>
+    <div class="section animation" id="image3" >
+        <img src="unnamed.jpg" alt="Placeholder Image 3">
+    </div>
+</div>
+
+<script src="script.js">
+   
+</script>
+
+</body>
+</html>
